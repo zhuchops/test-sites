@@ -25,4 +25,5 @@ jobs:
       - name: Run script
         env:
           TOKEN: ${{ secrets.TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
         run: uv run main.py
