@@ -1,6 +1,4 @@
-import asyncio
 import logging
-from dataclasses import dataclass
 
 import requests
 from telegram.ext import Application
