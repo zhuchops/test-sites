@@ -3,6 +3,11 @@ name: Site Monitor
 on:
   schedule:
     - cron: "*/1 * * * *"
+  workflaw_dispatch:
+    inputs:
+      environment:
+        description: "start script"
+        default: "staging"
 
 jobs:
   check:
