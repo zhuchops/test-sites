@@ -17,9 +17,7 @@ class Checker:
         self.app = app
 
     async def run(self):
-        while True:
-            await self._is_site_up()
-            await asyncio.sleep(10)
+        await self._is_site_up()
 
     async def _is_site_up(self) -> bool:
         try:
