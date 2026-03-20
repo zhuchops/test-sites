@@ -11,7 +11,7 @@ from checker.check import Checker
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
-SITES = ["http://144.31.112.219:8080"]
+SITES = ["http://144.31.112.219:8080", "http://144.31.19.78:8080"]
 
 token = os.getenv("TOKEN")
 if token is not None:
@@ -25,7 +25,7 @@ async def main():
     await app.start()
     for site in SITES:
         if not Checker(site).is_site_up():
-            text = f"ON NO!!! SITE {site} IS DOWN"
+            text = f"OH NO!!! SITE {site} IS DOWN"
             logging.warning(f"Site {site} is not available")
             await broadcast(text, app)
     await app.stop()
