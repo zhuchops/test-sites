@@ -11,7 +11,7 @@ from checker.check import Checker
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
-SITES = ["https://google.com", "https://httpstat.us/500"]
+SITES = ["144.31.112.219"]
 
 token = os.getenv("TOKEN")
 if token is not None:

@@ -1,9 +1,9 @@
 name: Site Monitor
 
-on:
-  schedule:
-    - cron: "*/1 * * * *"
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: "*/15 * * * *"
+#   workflow_dispatch:
 
 jobs:
   check:
