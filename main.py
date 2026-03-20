@@ -11,7 +11,7 @@ from checker.check import Checker
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
-SITES = ["144.31.112.219:8080"]
+SITES = ["http://144.31.112.219:8080"]
 
 token = os.getenv("TOKEN")
 if token is not None:
